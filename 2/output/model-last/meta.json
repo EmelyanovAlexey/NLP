@@ -1,14 +1,14 @@
 {
-  "lang":"en",
+  "lang":"ru",
   "name":"pipeline",
   "version":"0.0.0",
-  "spacy_version":">=3.6.1,<3.7.0",
+  "spacy_version":">=3.7.1,<3.8.0",
   "description":"",
   "author":"",
   "email":"",
   "url":"",
   "license":"",
-  "spacy_git_version":"458bc5f45",
+  "spacy_git_version":"9d036607f",
   "vectors":{
     "width":0,
     "vectors":0,
@@ -17,42 +17,72 @@
     "mode":"default"
   },
   "labels":{
+    "tok2vec":[
+
+    ],
     "textcat":[
       "positive",
       "negative"
+    ],
+    "tagger":[
+      "ADJ",
+      "ADP",
+      "ADV",
+      "AUX",
+      "CCONJ",
+      "DET",
+      "INTJ",
+      "NOUN",
+      "NUM",
+      "PART",
+      "PRON",
+      "PROPN",
+      "PUNCT",
+      "SCONJ",
+      "SPACE",
+      "SYM",
+      "VERB",
+      "X"
     ]
   },
   "pipeline":[
-    "textcat"
+    "tok2vec",
+    "textcat",
+    "tagger"
   ],
   "components":[
-    "textcat"
+    "tok2vec",
+    "textcat",
+    "tagger"
   ],
   "disabled":[
 
   ],
   "performance":{
-    "cats_score":0.5484400657,
+    "cats_score":0.9316600586,
     "cats_score_desc":"macro F",
-    "cats_micro_p":0.56,
-    "cats_micro_r":0.56,
-    "cats_micro_f":0.56,
-    "cats_macro_p":0.5494949495,
-    "cats_macro_r":0.5514922236,
-    "cats_macro_f":0.5484400657,
-    "cats_macro_auc":0.5855401429,
+    "cats_micro_p":0.9316666667,
+    "cats_micro_r":0.9316666667,
+    "cats_micro_f":0.9316666667,
+    "cats_macro_p":0.9316412824,
+    "cats_macro_r":0.931731852,
+    "cats_macro_f":0.9316600586,
+    "cats_macro_auc":0.9757962241,
     "cats_f_per_type":{
       "positive":{
-        "p":0.4444444444,
-        "r":0.5128205128,
-        "f":0.4761904762
+        "p":0.93728223,
+        "r":0.9274339189,
+        "f":0.932332068
       },
       "negative":{
-        "p":0.6545454545,
-        "r":0.5901639344,
-        "f":0.6206896552
+        "p":0.9260003348,
+        "r":0.9360297851,
+        "f":0.9309880491
       }
     },
-    "textcat_loss":0.0000005822
+    "tag_acc":0.9717224896,
+    "tok2vec_loss":339.4747128826,
+    "textcat_loss":5.5336246404,
+    "tagger_loss":4175.6426143499
   }
 }
